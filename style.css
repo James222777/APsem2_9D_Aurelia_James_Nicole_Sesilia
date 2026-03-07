@@ -9,7 +9,7 @@ body { /* padding-top to move the body down so the position:fixed/absolute heade
     background-position: center;
     background-attachment: fixed;
     color:rgb(255, 255, 255);
-    background-image: url("images/Homebg.png");     
+    background-image: url("Homebg.png");     
     background-color: rgba(0, 0, 0, 65%);
     background-blend-mode: darken;
 }
@@ -179,4 +179,5 @@ table, th, td{
     0 0 25px rgba(255, 255, 255, 0.8);
     transform: scale(1.1);
     cursor: pointer;
+
 }

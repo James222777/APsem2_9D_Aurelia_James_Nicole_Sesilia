@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <button class="button">Home</button>
+        </a>
+        <select class="ddropdown" onchange="location=this.value">
+            <option selected disabled value="grade7.html">Grade 7</option>
+            <option value="grade8.html">Grade 8</option>
+            <option value="grade9.html">Grade 9</option>
+        </select>
+        <a href="about.html">
+            <button class="button">About us</button>
+        </a>
+        <a href="sources.html">
+            <button class="button">Sources</button>
+        </a>
+    </header>
+    <div style="padding-left: 80px; padding-right: 80px;">
+        <h1>Grade 7</h1>
+        <h2 style="text-align: center;">Kinematics</h2>
+        <details class="toc" onclick="this.open = !this.open">
+            <summary style="text-align: center;">Table of Contents — Kinematics: Unit 2</summary>
+                <div style="padding-top: 20px;"></div> 
+                <table> 
+                    <tr>
+                        <td colspan="2" style="text-align: center; font-size: 20px; font-weight: bold; background-color: rgba(255, 255, 255, 0.5);">Table of Contents<br>Kinematics: Unit 2</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 10%; background-color: rgba(162, 215, 255, 0.5); text-align: center;"><b>No.</b></td>
+                        <td style="width: 90%; background-color: rgba(162, 215, 255, 0.5); text-align: center;"><b>Subtopic</b></td>
+                    </tr>
+                    <tr>
+                        <td>2.1</td>
+                        <td>Distance and displacement</td>
+                    </tr>
+                    <tr>
+                        <td>2.2</td>
+                        <td>Speed and velocity</td>
+                    </tr>
+                </table>
+        </details>
+        <div style="padding-top: 60px;">
+            <div class="box" style="padding: 0px;">
+                <h3><b>Introduction:</b></h3>
+            </div>
+            <div class="box" style="padding-top: 0px;">
+                <p>Kinematics is one of the most fundamental topics in physics. 
+                Everything around us moves. From cars and airplanes to planets orbiting the Sun. 
+                To describe kinematics specifically, we use quantities like distance, 
+                displacement, speed, velocity, and acceleration. </p>
+            </div>
+        </div>
+        <div style="padding-top: 40px;">
+            <div class="split">
+
+                <div class="panel-left">
+                    <h4><b>2.1 Distance and Displacement</b></h4>
+                    <p> Distance and Displacement are two important terms in mechanics that may seem similar but have different meanings and definitions.</p>
+                    <p style="padding-top: 20px;"><b>Distance</b> is a scalar quantity that refers to “how much ground an object has covered” during its motion. </p>
+                    <p>Example:<br>
+                    If a student walks 5 meters forward and then 5 meters backward, the total distance traveled is: <br>
+                    5+5 = 10 meters</p>
+                    <p style="padding-top: 20px;"><b>Displacement</b> is a vector quantity that refers to “how far out of place an object is,” which is the object’s overall change in position. </p>            
+                    <p>Example: <br>
+                    If a student walks 5 meters forward and then 5 meters backward, the total displacement traveled is: <br>
+                    5-5 = 0 meters<br>
+                    This is because they return to the original starting point. </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ako5Pj2rb6w" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="panel-right">
+                    <h4><b>2.2 Speed and Velocity</b></h4>
+                    <p><b>Speed</b> is a scalar quantity that refers to “how fast an object is moving.” Speed can be thought of as the rate at which an object covers <b>distance</b>. </p>
+                    <ul>
+                        <li>A fast-moving object has a high speed and covers a relatively large distance in a short amount of time.</li>
+                        <li>A slow-moving object that has a low speed, which covers a relatively small amount of distance in the same amount of time. </li>
+                        <li>An object with no movement at all in time has no speed. </li>
+                    </ul>
+                    <img src="https://anjungsainssmkss.wordpress.com/wp-content/uploads/2011/08/accelerationformula1.png" alt="a=(v-u)/t">
+                    <p>Example: <br>
+                    If velocity changes from 5 m/s to 15 m/s in 5 seconds, then..:</p>
+                    <img src="images/Example1.png" alt="a=(15-5)/5= 2m/s^2" width="300" height="130">
+                </div>
+            </div>
+        </div>
+        <div class="split" style="padding-top:40px;">
+            <div class="panel-left">
+                <script>
+                    function add(){
+                        let n1 = document.getElementById("in1").value;
+                        let n2 =document.getElementById("in2").value;
+                        let hs = Number(n1) + Number (n2);
+                        document.getElementById("out2").innerHTML=hs;
+                        document.getElementById("out1").innerHTML="+";
+                    }
+                    function minus(){
+                        let n1 = document.getElementById("in1").value;
+                        let n2 =document.getElementById("in2").value;
+                        let hs = Number(n1) - Number (n2);
+                        document.getElementById("out2").innerHTML=hs;
+                        document.getElementById("out1").innerHTML="-";  
+                    }
+                    function multiply(){
+                        let n1 = document.getElementById("in1").value;
+                        let n2 =document.getElementById("in2").value;
+                        let hs = Number(n1) * Number (n2); 
+                        document.getElementById("out2").innerHTML=hs;
+                        document.getElementById("out1").innerHTML="×";
+                    }
+                    function divide(){
+                        let n1 = document.getElementById("in1").value;
+                        let n2 =document.getElementById("in2").value;
+                        let hs = Number(n1) / Number (n2);
+                        document.getElementById("out2").innerHTML=hs;      
+                        document.getElementById("out1").innerHTML="÷";        
+                    }
+                    function clearAll(){
+                        document.getElementById("in1").value='';
+                        document.getElementById("in2").value='';
+                        document.getElementById("out2").innerHTML='...';
+                        document.getElementById("out1").innerHTML='';        
+                    }
+                    </script>
+                        <p>The convenient caculator</p>
+                        <p><input type="text" id="in1"></p>
+                        <p><input type="text" id="in2"></p>
+                        <span>_________________</span>
+                        <span id="out1"></span>
+                        <p id="out2">...</p>
+                        <p>
+                            <button onclick="add()" style="background-color: blue;">+</button>
+                            <button onclick="minus()" style="background-color:darkred;">-</button>
+                            <button onclick="multiply()" style="background-color: purple;">×</button>
+                            <button onclick="divide()" style="background-color:goldenrod;">÷</button>
+                            <button onclick="clearAll()" style="background-color:gray;">C</button>
+                        </p>
+            </div>
+            <div class="panel-right">
+                <script>
+                    function question(){
+                        let answer = document.getElementById("q").value;
+
+                        if(answer == "5m/s"){
+                            document.getElementById("result").innerHTML = "Correct!";
+                        }
+                        if(answer == "5 m/s"){
+                            document.getElementById("result").innerHTML = "Correct!";
+                        }
+                        else{
+                            document.getElementById("result").innerHTML = "Try again!";
+                            document.getElementById("q").value='Wrong!';
+                        }
+                    }
+                    </script>
+                        <p>Quiz!!</p>
+
+                        <p>If a car travels 100 m in 20s, how fast is that car going? (m/s)</p>
+
+                        <p><input type="text" id="q"></p>
+
+                        <p id="result">...</p>
+
+                        <p>
+                        <button onclick="question()" style="background-color: rgb(0,255,55);">
+                        Check!
+                        </button>
+                        </p>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="backgroundcover" style="width: auto;">
+            <div text-align: center;">
+                    <a href="gradeselect.html">
+                        <button class="button"> << Back</button>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <div style="padding-bottom: 100px;"></div>
+</body>
+</html>
